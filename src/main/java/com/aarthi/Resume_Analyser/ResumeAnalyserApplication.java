@@ -1,0 +1,13 @@
+package com.aarthi.Resume_Analyser;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class ResumeAnalyserApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(ResumeAnalyserApplication.class, args);
+	}
+
+}

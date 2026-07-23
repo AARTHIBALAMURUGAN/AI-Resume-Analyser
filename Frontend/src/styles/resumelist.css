@@ -1,0 +1,27 @@
+.resume-toolbar {
+  @apply flex flex-wrap items-center gap-3 bg-white rounded-2xl border border-slate-200 shadow-sm p-4;
+}
+
+.toolbar-input {
+  @apply flex items-center gap-2 flex-1 min-w-[220px] bg-slate-100 rounded-xl px-4 py-2.5;
+}
+
+.toolbar-select {
+  @apply bg-slate-100 rounded-xl px-4 py-2.5 text-slate-700 text-sm font-medium border-none focus:outline-none focus:ring-2 focus:ring-cyan-400 cursor-pointer;
+}
+
+.action-icon-btn {
+  @apply w-8 h-8 flex items-center justify-center rounded-lg text-slate-400 hover:bg-slate-100 hover:text-teal-700 transition;
+}
+
+.action-icon-btn.danger {
+  @apply text-red-400 hover:bg-red-50 hover:text-red-600;
+}
+
+.pagination-btn {
+  @apply flex items-center gap-1 px-4 py-2 rounded-lg border border-slate-200 text-slate-600 font-medium text-sm hover:bg-slate-50 transition disabled:opacity-40 disabled:cursor-not-allowed disabled:hover:bg-transparent;
+}
+
+.pagination-btn-primary {
+  @apply bg-teal-700 text-white border-teal-700 hover:bg-teal-800 hover:border-teal-800;
+}

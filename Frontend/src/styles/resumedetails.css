@@ -1,0 +1,31 @@
+@layer components {
+  /* ...keep all your existing classes... */
+
+  .info-card {
+    @apply bg-white rounded-2xl border border-slate-200 shadow-sm p-6;
+  }
+
+  .parsed-text-panel {
+    @apply bg-white rounded-2xl border border-slate-200 shadow-sm p-6 max-h-[600px] overflow-y-auto;
+  }
+
+  .feed-panel {
+    @apply space-y-4 max-h-[600px] overflow-y-auto pr-1;
+  }
+
+  .feed-card-strength {
+    @apply bg-teal-50 border-l-4 border-teal-600 rounded-xl p-5;
+  }
+
+  .feed-card-improvement {
+    @apply bg-red-50 border-l-4 border-red-400 rounded-xl p-5;
+  }
+
+  .feed-card-suggestion {
+    @apply bg-slate-100 border-l-4 border-slate-400 rounded-xl p-5;
+  }
+
+  .tag-pill {
+    @apply text-xs font-semibold px-2.5 py-1 rounded-md;
+  }
+}

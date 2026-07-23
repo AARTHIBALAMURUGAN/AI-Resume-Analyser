@@ -1,0 +1,8 @@
+:root {
+  --primary: #00e5ff;
+  --surface: #f7f9fb;
+  --surface-container: #ffffff;
+  --on-surface: #191c1e;
+  --outline-variant: rgba(0, 229, 255, 0.2);
+  --font-main: 'Plus Jakarta Sans', sans-serif;
+}

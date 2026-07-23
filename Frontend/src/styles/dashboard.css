@@ -1,0 +1,254 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .dash-shell {
+    @apply min-h-screen bg-slate-50 flex flex-col;
+  }
+
+  .dash-sidebar {
+    @apply w-72 bg-white border-r border-slate-200 flex flex-col justify-between py-6 px-4 fixed top-16 bottom-0 left-0 overflow-y-auto z-30 transition-transform duration-300 ease-out;
+  }
+
+  .dash-sidebar-open {
+    @apply translate-x-0;
+  }
+
+  @media (max-width: 767px) {
+    .dash-sidebar {
+      @apply -translate-x-full shadow-2xl;
+    }
+  }
+
+  .dash-sidebar.dash-sidebar-open {
+    transform: translateX(0) !important;
+  }
+
+  .dash-nav-item {
+    @apply flex items-center gap-3 px-4 py-3 rounded-xl text-slate-600 font-medium hover:bg-slate-100 transition cursor-pointer;
+  }
+
+  .dash-nav-item.active {
+    @apply bg-cyan-100 text-teal-700 border-r-4 border-cyan-400;
+  }
+
+  .stat-card {
+    @apply bg-white rounded-xl border border-slate-200 shadow-sm px-4 py-5 flex flex-col items-center text-center;
+  }
+
+  .stat-card.highlight {
+    @apply bg-cyan-50 border-cyan-300;
+  }
+
+  .dash-card {
+    @apply bg-white rounded-2xl border border-slate-200 shadow-sm p-6;
+  }
+
+  .mini-stat {
+    @apply flex flex-col items-center gap-2;
+  }
+
+  .mini-bar {
+    @apply h-1.5 w-24 rounded-full bg-slate-200 overflow-hidden;
+  }
+
+  .mini-bar-fill {
+    @apply h-full rounded-full bg-cyan-400;
+  }
+}
+
+@layer components {
+  /* ...keep all your existing classes... */
+
+  .info-card {
+    @apply bg-white rounded-2xl border border-slate-200 shadow-sm p-6;
+  }
+
+  .parsed-text-panel {
+    @apply bg-white rounded-2xl border border-slate-200 shadow-sm p-6 max-h-[600px] overflow-y-auto;
+  }
+
+  .feed-panel {
+    @apply space-y-4 max-h-[600px] overflow-y-auto pr-1;
+  }
+
+  .feed-card-strength {
+    @apply bg-teal-50 border-l-4 border-teal-600 rounded-xl p-5;
+  }
+
+  .feed-card-improvement {
+    @apply bg-red-50 border-l-4 border-red-400 rounded-xl p-5;
+  }
+
+  .feed-card-suggestion {
+    @apply bg-slate-100 border-l-4 border-slate-400 rounded-xl p-5;
+  }
+
+  .tag-pill {
+    @apply text-xs font-semibold px-2.5 py-1 rounded-md;
+  }
+}
+
+@layer components {
+  /* ...keep all your existing classes... */
+
+  .score-badge {
+    @apply inline-flex items-center gap-1.5 bg-cyan-100 text-teal-700 text-sm font-semibold px-3 py-1.5 rounded-full;
+  }
+
+  .keyword-tag {
+    @apply bg-slate-100 text-slate-600 text-sm font-medium px-3 py-1.5 rounded-lg;
+  }
+
+  .metadata-row {
+    @apply flex items-center gap-3;
+  }
+
+  .metadata-icon {
+    @apply w-10 h-10 rounded-xl bg-slate-100 flex items-center justify-center flex-shrink-0;
+  }
+
+  .parsed-section-label {
+    @apply text-xs font-bold text-teal-700 tracking-wide uppercase mb-3;
+  }
+
+  .parsed-field {
+    @apply bg-slate-50 border border-slate-200 rounded-xl px-4 py-3 text-slate-700 text-sm;
+  }
+
+  .timeline-item {
+    @apply relative pl-6 pb-6 border-l-2 border-slate-200 last:border-transparent last:pb-0;
+  }
+
+  .timeline-dot {
+    @apply absolute -left-[7px] top-1 w-3 h-3 rounded-full bg-teal-600 ring-4 ring-white;
+  }
+
+  .insight-card {
+    @apply bg-white rounded-2xl border-l-4 p-5;
+  }
+
+  .insight-card.strength {
+    @apply border-l-teal-600 border border-slate-100;
+  }
+
+  .insight-card.improvement {
+    @apply border-l-amber-500 border border-slate-100;
+  }
+
+  .insight-card.suggestion {
+    @apply border-l-teal-800 border border-slate-100;
+  }
+
+  .priority-badge {
+    @apply bg-teal-700 text-white text-xs font-semibold px-3 py-1 rounded-full whitespace-nowrap;
+  }
+
+  .processing-indicator {
+    @apply border-2 border-dashed border-slate-200 rounded-2xl p-5 text-center text-sm text-slate-400 italic;
+  }
+}
+
+@layer components {
+  /* ...keep all your existing classes... */
+
+  .jobmatch-textarea {
+    @apply w-full min-h-[320px] rounded-xl border border-slate-200 p-4 text-slate-700 placeholder-slate-400 resize-none focus:outline-none focus:ring-2 focus:ring-cyan-400 transition;
+  }
+
+  .jobmatch-tool-btn {
+    @apply flex items-center justify-center gap-2 bg-slate-100 hover:bg-slate-200 text-slate-700 font-medium px-4 py-3 rounded-xl transition;
+  }
+
+  .jobmatch-analyze-btn {
+    @apply flex-1 flex items-center justify-center gap-2 bg-teal-700 hover:bg-teal-800 text-white font-bold text-lg px-6 py-3 rounded-xl shadow-lg shadow-teal-700/30 transition disabled:opacity-60 disabled:cursor-not-allowed;
+  }
+
+  .dashed-panel {
+    @apply border-2 border-dashed border-slate-200 rounded-2xl flex flex-col items-center justify-center text-center p-8;
+  }
+}
+
+@layer components {
+  /* ...keep all your existing classes... */
+
+  .dropzone {
+    @apply border-2 border-dashed border-cyan-200 rounded-2xl flex flex-col items-center justify-center text-center py-20 px-6 bg-white transition;
+  }
+
+  .dropzone.dragging {
+    @apply border-cyan-400 bg-cyan-50;
+  }
+
+  .feature-card {
+    @apply bg-white rounded-2xl border border-slate-200 shadow-sm p-6;
+  }
+
+  .feature-icon {
+    @apply w-10 h-10 rounded-xl bg-cyan-50 text-teal-700 flex items-center justify-center mb-4;
+  }
+}
+
+@layer components {
+  /* ...keep all your existing classes... */
+
+  .security-card {
+    @apply w-full max-w-xl mx-auto bg-white rounded-2xl border border-slate-200 shadow-sm px-10 py-10;
+  }
+
+  .field-label {
+    @apply text-xs font-bold text-teal-700 tracking-wide uppercase mb-2 block;
+  }
+
+  .security-input {
+    @apply w-full pl-11 pr-11 py-3.5 rounded-xl bg-slate-100 border border-slate-200 text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-cyan-400 transition;
+  }
+
+  .strength-bar {
+    @apply h-1.5 flex-1 rounded-full bg-slate-200;
+  }
+
+  .strength-bar.filled {
+    @apply bg-cyan-400;
+  }
+}
+
+
+@layer components {
+  .recovery-page {
+    @apply min-h-screen w-full bg-slate-50 bg-gradient-to-br from-cyan-50/40 via-transparent to-transparent flex flex-col;
+  }
+
+  .recovery-topbar {
+    @apply h-16 flex items-center justify-between px-8 border-b border-slate-100;
+  }
+
+  .recovery-card {
+    @apply w-full max-w-md mx-auto bg-white rounded-2xl shadow-xl shadow-slate-200 px-10 py-10;
+  }
+
+  .recovery-input {
+    @apply w-full pl-11 pr-4 py-3.5 rounded-xl bg-white border border-slate-200 text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-cyan-400 transition;
+  }
+
+  .recovery-btn {
+    @apply w-full flex items-center justify-center gap-2 bg-cyan-400 hover:bg-cyan-300 text-slate-900 font-semibold text-lg py-3.5 rounded-xl shadow-lg shadow-cyan-300/50 transition disabled:opacity-60 disabled:cursor-not-allowed;
+  }
+
+  .otp-input {
+    @apply w-full text-center tracking-[0.5em] text-xl font-semibold pl-4 pr-4 py-3.5 rounded-xl bg-white border border-slate-200 text-slate-800 placeholder-slate-300 focus:outline-none focus:ring-2 focus:ring-cyan-400 transition;
+  }
+
+  .step-dot {
+    @apply w-2 h-2 rounded-full bg-slate-200;
+  }
+
+  .step-dot.active {
+    @apply bg-cyan-400 w-6;
+  }
+
+  .step-dot.done {
+    @apply bg-teal-600;
+  }
+}

@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Optional: custom reusable component classes built from Tailwind utilities */
+@layer components {
+  .login-page {
+    @apply min-h-screen w-full bg-[#0a0e1a] flex flex-col items-center justify-center px-4 py-12 relative overflow-hidden;
+  }
+
+  .login-card {
+    @apply relative z-10 w-full max-w-md bg-gradient-to-b from-slate-300/90 to-slate-400/90 backdrop-blur-xl rounded-2xl shadow-2xl p-8;
+  }
+
+  .login-input {
+    @apply w-full pl-10 pr-4 py-3 rounded-xl bg-slate-200/80 border border-slate-300 text-slate-800 placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-cyan-500 transition;
+  }
+
+  .login-btn {
+    @apply w-full flex items-center justify-center gap-2 py-3.5 rounded-xl bg-cyan-400 hover:bg-cyan-300 text-slate-900 font-bold text-lg shadow-lg shadow-cyan-400/40 transition;
+  }
+
+  .ai-status-card {
+    @apply hidden sm:block fixed bottom-6 right-6 w-64 bg-slate-300/90 backdrop-blur-md rounded-xl border-l-4 border-cyan-400 shadow-xl p-4 z-20;
+  }
+}
