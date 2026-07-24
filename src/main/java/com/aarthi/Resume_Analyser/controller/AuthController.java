@@ -62,7 +62,7 @@ public String changePassword(
         );
     }
 
-    // Verify OTP
+    
     @PostMapping("/verifyotp")
     public ResponseEntity<ApiResponse> verifyOtp(
             @RequestBody verifyOtpRequest request) {
@@ -77,7 +77,7 @@ public String changePassword(
         );
     }
 
-    // Reset Password
+    
     @PostMapping("/resetpassword")
     public ResponseEntity<ApiResponse> resetPassword(
             @RequestBody ResetPasswordRequest request) {

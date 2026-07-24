@@ -27,10 +27,7 @@ public class ResumeController {
         return resumeService.uploadResume(file);
 
     }
-//     @GetMapping("/history")
-//     public List<ResumeAnalysis> history(){
-//  return resumeService.getMyResumes();
-//     }
+
     @GetMapping("/{id}")
     public ResumeAnalysis getResume(@PathVariable Long id){
             System.out.println("controller calle");
