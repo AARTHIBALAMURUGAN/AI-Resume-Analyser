@@ -90,7 +90,7 @@ function Login() {
     <div className="login-page">
       <div className="absolute inset-0 bg-gradient-to-br from-cyan-950/20 via-transparent to-transparent pointer-events-none" />
 
-      {/* Header */}
+     
       <div className="relative z-10 flex flex-col items-center mb-8">
         <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-teal-600 to-cyan-500 flex items-center justify-center shadow-lg shadow-cyan-500/30 mb-6">
           <Brain className="w-8 h-8 text-cyan-100" strokeWidth={1.5} />
@@ -103,7 +103,7 @@ function Login() {
         </p>
       </div>
 
-      {/* Card */}
+    
       <div className="login-card">
         {feedback && (
           <div className="mb-5">

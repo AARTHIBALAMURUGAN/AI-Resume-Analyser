@@ -242,7 +242,7 @@ function Register() {
 
       
       <p className="text-xs text-slate-400 text-center mt-10 max-w-md">
-        © 2024 CareerAI Systems. Powered by Advanced Neural Networks for
+        © 2026 CareerAI Systems. Powered by Advanced Neural Networks for
         Precision Analysis.
       </p>
     </div>

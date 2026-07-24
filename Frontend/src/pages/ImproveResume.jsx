@@ -60,13 +60,6 @@ function ImprovedResume() {
     });
   };
 
-  const navItems = [
-    { icon: LayoutGrid, label: "Overview" },
-    { icon: ScanLine, label: "Resume Scan", active: true },
-    { icon: Target, label: "Skill Gap" },
-    { icon: TrendingUp, label: "Career Path" },
-    { icon: Settings, label: "Settings" },
-  ];
 
   return (
     <div className="resume-shell">
