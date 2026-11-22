@@ -58,7 +58,7 @@ public class SecurityConfig {
         CorsConfiguration configuration = new CorsConfiguration();
 
         configuration.setAllowedOriginPatterns(List.of(
-                "https://ai-resume-analyser-azure.vercel.app/"
+                "https://ai-resume-analyser-jner.vercel.app/"
         ));
         configuration.setAllowedMethods(List.of(
                 "GET",
