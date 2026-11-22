@@ -120,7 +120,7 @@ public DashboardResponse getDashboard() {
 
     DashboardResponse dashboard = new DashboardResponse();
 
-    dashboard.setUser(user.getEmail());
+    dashboard.setUser(user.getName());
     dashboard.setTotalResumes(resumeRepository.countByUser(user));
 
     if (!resumes.isEmpty()) {
